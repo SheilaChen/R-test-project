@@ -1,6 +1,9 @@
-library(runjags)
+# Sample scripts for Markov Chain Monte Carlo simulations
+# 
+library(runjags)  # depends on JAG
 testjags()
 
+# Build the model
 our.model <- "
 model {
   # likelihood function
@@ -13,6 +16,8 @@ model {
   theta <- numSuccesses / numTrials
 }"
 
+# Build the data used for simulation
+# Are these initial data?
 our.data <- list(
   numTrials = 40,
   successProb = 36/40
