@@ -1,6 +1,6 @@
 # Sample scripts for Markov Chain Monte Carlo simulations
 # 
-library(runjags)  # depends on JAG
+library(runjags)  # depends on JAGS
 testjags()
 
 # Build the model
