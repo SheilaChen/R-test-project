@@ -36,7 +36,7 @@ lines(c(.8, .975), c(.1, .1))
 lines(c(.8, .8), c(.05, .15))
 lines(c(.975, .975), c(.05, .15))
 
-# Fitting Distribution the Bayesian Way
+# Example 2: Fitting Distribution the Bayesian Way
 # 
 the.model <- "
 model {
@@ -75,7 +75,7 @@ contour(z, drawlabels = FALSE,
         lwd = 3, add = TRUE)
 
 
-# Bayesian independent samples t-test
+# Example 3: Bayesian independent samples t-test
 the.model <- "
 model {
   # each group will have a separate mu and stddev
